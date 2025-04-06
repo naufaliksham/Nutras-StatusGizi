@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Nutras Fitness & Nutrition Bootstrap 5 Template</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/images/favicon.ico"
+    />
+
+    <!-- CSS ============================================ -->
+
+    <!-- Icon Font CSS -->
+    <link rel="stylesheet" href="assets/css/plugins/icofont.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/flaticon.css" />
+    <link rel="stylesheet" href="assets/css/plugins/font-awesome.min.css" />
+
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/plugins/nice-select.css" />
+
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <div class="main-wrapper">
+      <!-- Header Section Start -->
+      <div class="header section">
+        <!-- Header Main Start -->
+        <div class="header-main">
+          <div class="container">
+            <!-- Header Wrapper Start -->
+            <div class="header-wrapper">
+              <!-- Header Logo Start -->
+              <div class="header-logo">
+                <a href="index.html"
+                  ><img src="assets/images/logo.png" alt="Logo"
+                /></a>
+              </div>
+              <!-- Header Logo End -->
+
+              <!-- Header Menu Start -->
+              <div class="header-menu d-none d-lg-flex">
+                <ul class="nav-menu">
+                  <li><a class="active" href="#mulai">Mulai</a></li>
+                  <li><a href="#contentGizi">Status Gizi</a></li>
+                </ul>
+
+                <div class="header-btn">
+                  <a href="index.html" class="btn btn-secondary btn-hover-primary">
+                    Halaman Utama
+                  </a>
+                </div>
+              </div>
+              <!-- Header Menu End -->
+
+              <!-- Header Toggle Start -->
+              <div class="header-toggle d-lg-none">
+                <p class="btn btn-secondary btn-hover-primary">
+                  Halaman Utama
+                </p>
+
+                <a href="#" class="menu-toggle">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </a>
+              </div>
+              <!-- Header Toggle End -->
+            </div>
+            <!-- Header Wrapper End -->
+          </div>
+        </div>
+        <!-- Header Main End -->
+      </div>
+      <!-- Header Section End -->
+
+      <!-- Mobile Menu Start -->
+      <div class="mobile-menu">
+        <!-- Menu Close Start -->
+        <a class="menu-close" href="javascript:void(0)">
+          <i class="icofont-close-line"></i>
+        </a>
+        <!-- Menu Close End -->
+
+        <!-- Mobile Menu Start -->
+        <div class="mobile-menu-items">
+          <ul class="nav-menu">
+            <li><a class="active" href="#mulai">Mulai</a></li>
+            <li><a href="#contentGizi">Status Gizi</a></li>
+          </ul>
+        </div>
+        <!-- Mobile Menu End -->
+      </div>
+      <!-- Mobile Menu End -->
+
+      <!-- Overlay Start -->
+      <div class="overlay"></div>
+      <!-- Overlay End -->
+
+      <!-- Page banner Section Start -->
+      <div
+        id="mulai"
+        class="section page-banner-section"
+        style="background-image: url(assets/images/page-banner.jpg)"
+      >
+        <div class="container">
+          <!-- Page banner Section Start -->
+          <div class="page-banner-content">
+            <h2 class="page-title">Perhitungan IMT</h2>
+          </div>
+          <!-- Page banner Section End -->
+        </div>
+      </div>
+      <!-- Page banner Section End -->
+
+      <!-- Courses Details Start -->
+      <div
+        id="contentGizi"
+        class="section section-padding-02"
+        style="margin-bottom: 5%"
+      >
+        <div class="container">
+          <div class="courses-details-wrapper">
+            <div class="row flex-row-reverse gx-xxl-5">
+              <div class="col-lg-4">
+                <!-- Courses Details Sidebar Start -->
+                <div class="sidebar">
+                  <!-- Sidebar Widget Information Start -->
+                  <div class="sidebar-widget widget-information">
+                    <div class="info-price">
+                      <span class="price">Kalkulator<br />Status Gizi</span>
+                    </div>
+                    <div class="info-list">
+                      <ul>
+                        <li>
+                          <i class="icofont-user"></i>
+                          <strong for="inputBB">Berat Badan (Kilogram)</strong>
+                          <input
+                            type="number"
+                            id="inputBB"
+                            style="color: black"
+                            class="form-control"
+                            placeholder="Kilogram"
+                            required
+                          /><span></span>
+                        </li>
+                        <li>
+                          <i class="icofont-user"></i>
+                          <strong for="inputTB"
+                            >Tinggi Badan (Centimeter)</strong
+                          >
+                          <input
+                            type="number"
+                            id="inputTB"
+                            style="color: black"
+                            class="form-control"
+                            placeholder="Centimeter"
+                            required
+                          />
+                          <span></span>
+                        </li>
+                        <li>
+                          <i class="icofont-star"></i> <b>Hasil IMT = </b
+                          ><b id="IMT">?</b>
+                        </li>
+                        <li>
+                          <i class="icofont-star"></i> <b>Status Gizi = </b
+                          ><b id="statusGizi">?</b>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="info-btn">
+                      <p
+                        class="btn btn-secondary btn-hover-primary"
+                        onclick="hitung()"
+                      >
+                        Hitung Sekarang
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Sidebar Widget Information End -->
+                </div>
+                <!-- Courses Details Sidebar End -->
+              </div>
+              <div class="col-lg-8">
+                <!-- Courses Details Start -->
+                <div class="courses-details">
+                  <h1 class="title">
+                    <center><b>Deskripsi</b></center>
+                  </h1>
+                  <br />
+                  <!-- Details Tab Content Start -->
+                  <div class="details-tab-content">
+                    <div class="tab-content">
+                      <div class="tab-pane fade show active" id="description">
+                        <!-- Tab Description Start -->
+                        <div class="tab-description">
+                          <div class="description-wrapper">
+                            <h3 class="tab-title" id="reaksi">
+                              <center>
+                                Silahkan hitung status gizi anda terlebih
+                                dahulu!
+                              </center>
+                            </h3>
+                            <br />
+                            <p id="d1"></p>
+                            <p id="d2"></p>
+                            <ul id="faktor"></ul>
+                            <p id="d3"></p>
+                            <ul id="dampak"></ul>
+                            <p id="d4"></p>
+                            <br />
+                            <p id="btn"></p>
+                          </div>
+                        </div>
+                        <!-- Tab Description End -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Details Tab Content End -->
+                </div>
+                <!-- Courses Details End -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Courses Details End -->
+
+      <!-- isi konten status gizi -->
+      <script>
+        function hitung() {
+          // Ambil nilai
+          var BB = parseFloat(document.getElementById("inputBB").value);
+          var TB = parseFloat(document.getElementById("inputTB").value);
+
+          // Hitung
+          var IMT = (BB / (TB / 100) ** 2).toFixed(2);
+
+          // Titik menjadi Koma
+          var IMTn = IMT.replace(".", ",");
+
+          // Tentukan kondisi dan hasilnya
+          if (IMT < 18.5) {
+            document.getElementById("IMT").innerText = IMTn;
+            document.getElementById("statusGizi").innerText = "Kurang";
+
+            document.getElementById("reaksi").innerText = "Yahh!";
+            document.getElementById("d1").innerText =
+              "Status gizi anda masih tergolong status gizi kurang. Status gizi kurang adalah suatu keadaan dimana kebutuhan nutrisi pada tubuh tidak terpenuhi dalam jangka waktu tertentu sehingga tubuh akan memecah cadangan makanan yang berada di bawah lapisan lemak dan lapisan organ tubuh.";
+            document.getElementById("d2").innerText =
+              "Status gizi kurang dapat disebabkan oleh beberapa faktor, antara lain:";
+            document.getElementById("faktor").innerHTML =
+              "<li>&nbsp;&nbsp;- Asupan makanan yang tidak cukup</li><li>&nbsp;&nbsp;- Kebutuhan energi yang meningkat</li><li>&nbsp;&nbsp;- Penyakit infeksi</li><li>&nbsp;&nbsp;- Gangguan pencernaan</li><li>&nbsp;&nbsp;- Kelainan genetik</li>";
+            document.getElementById("d3").innerText =
+              "Status gizi kurang dapat berdampak pada berbagai aspek kesehatan, antara lain:";
+            document.getElementById("dampak").innerHTML =
+              "<li>&nbsp;&nbsp;- Pertumbuhan dan perkembangan yang tidak optimal</li><li>&nbsp;&nbsp;- Ketahanan tubuh yang menurun</li><li>&nbsp;&nbsp;- Risiko penyakit kronis</li>";
+            document.getElementById("d4").innerText =
+              "Eitss, jangan khawatir. Untuk mengetahui cara meningkatkan status gizi menjadi normal yuk intip intervensi gizinya!";
+
+            // ````````````` TOMBOL ````````````````````````````````````````````````
+            var btnElement = document.getElementById("btn");
+            // Dapatkan elemen dengan ID 'btn'
+
+            // Buat elemen baru
+            var infoBtnElement = document.createElement("div");
+            infoBtnElement.classList.add("info-btn");
+
+            var linkElement = document.createElement("a");
+            linkElement.classList.add(
+              "btn",
+              "btn-secondary",
+              "btn-hover-primary"
+            );
+            linkElement.href = "status-gizi-kurang.html"; // Ganti dengan URL yang diinginkan
+            linkElement.innerHTML = "Klik Sini";
+
+            infoBtnElement.appendChild(linkElement);
+
+            // Gantikan elemen lama dengan elemen baru
+            btnElement.innerHTML = ""; // Kosongkan isi elemen dengan ID 'btn'
+            btnElement.appendChild(infoBtnElement);
+            // ``````````````````````````````````````````````````````````````````````
+          } else if (IMT >= 18.5 && IMT <= 25) {
+            document.getElementById("IMT").innerText = IMTn;
+            document.getElementById("statusGizi").innerText = "Normal";
+
+            document.getElementById("reaksi").innerText = "Wahh!";
+            document.getElementById("d1").innerText =
+              "Selamat status gizi anda tergolong status gizi normal. Status gizi normal adalah suatu keadaan dimana kebutuhan nutrisi pada tubuh terpenuhi secara optimal sehingga tubuh dapat tumbuh dan berkembang secara normal, serta memiliki daya tahan tubuh yang baik.";
+            document.getElementById("d2").innerText =
+              "Status gizi normal memiliki berbagai manfaat, antara lain:";
+            document.getElementById("faktor").innerHTML =
+              "<li>&nbsp;&nbsp;- Pertumbuhan dan perkembangan yang optimal</li><li>&nbsp;&nbsp;- Ketahanan tubuh yang baik</li><li>&nbsp;&nbsp;- Risiko penyakit kronis yang rendah</li>";
+            document.getElementById("d3").innerText =
+              "Pertahankan ya! Untuk mengetahui caranya yuk kita intip intervensi gizinya!";
+
+            // ````````````` TOMBOL ````````````````````````````````````````````````
+            // Dapatkan elemen dengan ID 'btn'
+            var btnElement = document.getElementById("btn");
+
+            // Buat elemen baru
+            var infoBtnElement = document.createElement("div");
+            infoBtnElement.classList.add("info-btn");
+
+            var linkElement = document.createElement("a");
+            linkElement.classList.add(
+              "btn",
+              "btn-secondary",
+              "btn-hover-primary"
+            );
+            linkElement.href = "status-gizi-normal.html"; // Ganti dengan URL yang diinginkan
+            linkElement.innerHTML = "Klik Sini";
+
+            infoBtnElement.appendChild(linkElement);
+
+            // Gantikan elemen lama dengan elemen baru
+            btnElement.innerHTML = ""; // Kosongkan isi elemen dengan ID 'btn'
+            btnElement.appendChild(infoBtnElement);
+            // ``````````````````````````````````````````````````````````````````````
+          } else if (IMT > 25) {
+            document.getElementById("IMT").innerText = IMTn;
+            document.getElementById("statusGizi").innerText = "Lebih";
+
+            document.getElementById("reaksi").innerText = "Aduhh!";
+            document.getElementById("d1").innerText =
+              "Status gizi anda sudah mencapi status gizi berlebih nih. Status gizi lebih adalah suatu keadaan dimana jumlah asupan energi yang masuk ke dalam tubuh lebih besar dari jumlah energi yang dikeluarkan. Hal ini menyebabkan kelebihan berat badan atau obesitas.";
+            document.getElementById("d2").innerText =
+              "Status gizi lebih dapat disebabkan oleh beberapa faktor, antara lain:";
+            document.getElementById("faktor").innerHTML =
+              "<li>&nbsp;&nbsp;- Asupan makanan yang berlebihan</li><li>&nbsp;&nbsp;- Kebutuhan energi yang rendah</li><li>&nbsp;&nbsp;- Kebiasaan sedentary lifestyle</li><li>&nbsp;&nbsp;- Faktor genetik</li>";
+            document.getElementById("d3").innerText =
+              "Status gizi lebih dapat berdampak pada berbagai aspek kesehatan, antara lain:";
+            document.getElementById("dampak").innerHTML =
+              "<li>&nbsp;&nbsp;- Risiko penyakit kronis, seperti penyakit jantung, stroke, diabetes, dan kanker</li><li>&nbsp;&nbsp;- Gangguan fungsi organ tubuh</li><li>&nbsp;&nbsp;- Penurunan kualitas hidup</li>";
+            document.getElementById("d4").innerText =
+              "Yuk bisa yuk kita turunkan status gizinya mencapai normal. Mari kita intip intervensi gizinya!";
+
+            // ````````````` TOMBOL ````````````````````````````````````````````````
+            // Dapatkan elemen dengan ID 'btn'
+            var btnElement = document.getElementById("btn");
+
+            // Buat elemen baru
+            var infoBtnElement = document.createElement("div");
+            infoBtnElement.classList.add("info-btn");
+
+            var linkElement = document.createElement("a");
+            linkElement.classList.add(
+              "btn",
+              "btn-secondary",
+              "btn-hover-primary"
+            );
+            linkElement.href = "status-gizi-lebih.html"; // Ganti dengan URL yang diinginkan
+            linkElement.innerHTML = "Klik Sini";
+
+            infoBtnElement.appendChild(linkElement);
+
+            // Gantikan elemen lama dengan elemen baru
+            btnElement.innerHTML = ""; // Kosongkan isi elemen dengan ID 'btn'
+            btnElement.appendChild(infoBtnElement);
+            // ``````````````````````````````````````````````````````````````````````
+          } else {
+            document.getElementById("IMT").innerText = "?";
+            document.getElementById("statusGizi").innerText = "?";
+            document.getElementById("reaksi").innerText = "Oops!";
+            document.getElementById("d1").innerText =
+                "Silakan masukkan nilai Berat Badan dan Tinggi Badan terlebih dahulu.";
+            document.getElementById("d2").innerText = "";
+            document.getElementById("faktor").innerHTML = "";
+            document.getElementById("d3").innerText = "";
+            document.getElementById("dampak").innerHTML = "";
+            document.getElementById("d4").innerText = "";
+            document.getElementById("btn").innerHTML = "";
+          }
+        }
+      </script>
+
+      <!-- Footer Start -->
+      <div class="section footer-section">
+
+        <!-- Footer Copyright Section Start -->
+        <div class="footer-copyright">
+            <div class="container">
+
+                <!-- Copyright Wrapper Start -->
+                <div class="copyright-wrapper">
+
+                    <div class="copyright-text">
+                        <p id="copyright-text">&copy; naufal_iksham</p>
+                    </div>                        
+
+                    <div class="copyright-link">
+                        <a href="https://www.linkedin.com/in/naufaliksham19/" target="_blank">LinkedIn</a>
+                        <a href="https://github.com/naufaliksham" target="_blank">Github</a>
+                        <a href="mailto:naufal.iksham@gmail.com" target="_blank">naufal.iksham@gmail.com</a>
+                    </div>
+
+                </div>
+                <!-- Copyright Wrapper End -->
+
+            </div>
+        </div>
+        <!-- Footer Copyright Section End -->
+
+    </div>
+    <!-- Footer End -->
+
+      <!--Back To Start-->
+      <a href="#" class="back-to-top">
+        <i class="icofont-simple-up"></i>
+      </a>
+      <!--Back To End-->
+    </div>
+
+    <!-- JS
+    ============================================ -->
+    <!-- Footer -->
+    <script>
+      const year = new Date().getFullYear();
+      const author = "naufal_iksham";
+      document.getElementById("copyright-text").innerHTML = `&copy; ${year} ${author}`;
+    </script>
+
+    <!-- Modernizer & jQuery JS -->
+    <script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="assets/js/vendor/jquery-3.5.1.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="assets/js/plugins/popper.min.js"></script>
+    <script src="assets/js/plugins/bootstrap.min.js"></script>
+
+    <!-- Plugins JS -->
+    <script src="assets/js/plugins/swiper-bundle.min.js"></script>
+    <script src="assets/js/plugins/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/plugins/jquery.nice-select.min.js"></script>
+    <script src="assets/js/plugins/video-playlist.js"></script>
+    <script src="assets/js/plugins/ajax-contact.js"></script>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
